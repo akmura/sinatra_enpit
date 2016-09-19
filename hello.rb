@@ -4,6 +4,12 @@ get '/' do
 erb :index
 end
 
-get '/:name' do |n|
-erb :#{n}
+get '/hello' do
+erb :hello
 end
+
+not_found do
+'ページが存在しません'
+end
+
+
