@@ -8,6 +8,10 @@ get '/hello' do
 erb :hello
 end
 
+get '/user/' do
+erb :user
+end
+
 get '/user/:name' do |n|
 @name = n
 erb :user

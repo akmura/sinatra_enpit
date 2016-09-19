@@ -1,1 +1,9 @@
-ようこそ <%= @name %> さん
+ようこそ 
+<%= 
+if @name == nil
+"ゲスト"
+else
+@name
+end
+
+%> さん
