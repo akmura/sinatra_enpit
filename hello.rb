@@ -4,6 +4,6 @@ get '/' do
 erb :index
 end
 
-get '/hello' do
-"hello"
+get '/:name' do |n|
+erb :#{n}
 end
